@@ -1,10 +1,8 @@
 class RekeningBank {
 
-    // atribut (dienkapsulasi)
     private String nomorRekening;
     private double saldo;
 
-    // constructor
     public RekeningBank(String nomorRekening, double saldoAwal) {
         this.nomorRekening = nomorRekening;
 
@@ -41,7 +39,6 @@ public class Main {
         System.out.println("Nomor Rekening : " + rek.getNomorRekening());
         System.out.println("Saldo Awal     : " + rek.getSaldo());
 
-        // update saldo
         rek.setSaldo(2000);
         rek.setSaldo(-500); // akan ditolak
 
